@@ -11,41 +11,41 @@
 }
 
 .text:nth-child(5n + 1) {
-  /* stroke: #F2385A; */
-  stroke: #E0BBE4;
+  stroke: #f2385a;
+  /* stroke: #e0bbe4; */
   /* stroke: #677db9; */
-  
+
   -webkit-animation-delay: -1.2s;
   animation-delay: -1.2s;
 }
 
 .text:nth-child(5n + 2) {
-  /* stroke: #F5A503; */
-  stroke: #957DAD;
+  stroke: #f5a503;
+  /* stroke: #957dad; */
   /* stroke: #86a9e7; */
   -webkit-animation-delay: -2.4s;
   animation-delay: -2.4s;
 }
 
 .text:nth-child(5n + 3) {
-  /* stroke: #E9F1DF; */
-  stroke: #D291BC;
+  stroke: #e9f1df;
+  /* stroke: #d291bc; */
   /* stroke: #ba1e68; */
   -webkit-animation-delay: -3.6s;
   animation-delay: -3.6s;
 }
 
 .text:nth-child(5n + 4) {
-  /* stroke: #56D9CD; */
-  stroke: #FEC8D8;
+  stroke: #56d9cd;
+  /* stroke: #fec8d8; */
   /* stroke: #5643fd; */
   -webkit-animation-delay: -4.8s;
   animation-delay: -4.8s;
 }
 
 .text:nth-child(5n + 5) {
-  /* stroke: #3AA1BF; */
-  stroke: #FFDFD3;
+  stroke: #3aa1bf;
+  /* stroke: #ffdfd3; */
   /* stroke: #7649fe; */
   -webkit-animation-delay: -6s;
   animation-delay: -6s;
@@ -56,6 +56,7 @@
     stroke-dashoffset: -400;
   }
 }
+
 @keyframes stroke {
   100% {
     stroke-dashoffset: -400;
@@ -63,15 +64,28 @@
 }
 /* Other styles */
 .homepage {
-  height: 100vh;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
 }
 
 .con_ani {
-  /* background: #111; */
-  background-size: .2em 100%;
-  font: 14.5em/1 Open Sans, Impact;
+  background-size: 0.2em 100%;
+  font: 18rem Open Sans, Impact;
   text-transform: uppercase;
   margin: 0;
+}
+
+@media (max-width: 768px) {
+  .con_ani {
+    font-size: 8rem;
+  }
 }
 
 svg {
