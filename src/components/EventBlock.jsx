@@ -55,6 +55,21 @@ const EventBlockWrapper = styled.div`
       margin-right: 0;
     }
   }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    img {
+      margin: 0;
+    }
+
+    &:nth-child(odd) {
+      flex-direction: column;
+
+      img {
+        margin: 0;
+      }
+    }
+  }
 `;
 
 const EventPoster = styled.img`
@@ -62,6 +77,11 @@ const EventPoster = styled.img`
   max-height: 32rem;
   border-radius: 0.5rem;
   display: block;
+
+  @media (max-width: 768px) {
+    min-width: 100%;
+    max-height: 36rem;
+  }
 `;
 
 const EventInfo = styled.div`
@@ -97,6 +117,28 @@ const EventInfo = styled.div`
 
       &:last-child {
         margin-right: 0;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 2rem;
+
+    .event-title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .event-description {
+      font-size: 1.4rem;
+      margin-bottom: 2rem;
+    }
+
+    .event-cta {
+      .view-event,
+      .participate-event {
+        padding: 0.8rem 1.5rem;
+        font-size: 1.25rem;
       }
     }
   }
