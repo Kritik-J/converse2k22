@@ -1,0 +1,19 @@
+.back_animation {
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    z-index: -1;
+}
+.slider {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    width: 150px;
+    color: white;
+    font-family: sans-serif;
+    text-align: right;
+}
+.slider input {
+    width: 100%;
+    margin-bottom: 5px;
+}
