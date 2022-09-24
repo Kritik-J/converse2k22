@@ -1,14 +1,19 @@
 import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Home from "./pages/HomePage";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import Header from "./components/Header";
+import ScrollToTop from "./utils/ScrollToTop";
+import EventPage from "./pages/EventPage";
 
 function App() {
   return (
     <Router>
-      <Switch>
-        <Route exact path="/" component={Home}></Route>
-      </Switch>
+      <Header />
+      <ScrollToTop />
+      <Routes>
+        <Route exact path="/" element={<HomePage />}></Route>
+        <Route path="/events/:id" element={<EventPage />}></Route>
+      </Routes>
     </Router>
   );
 }

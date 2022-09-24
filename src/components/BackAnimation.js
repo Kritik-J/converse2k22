@@ -1,11 +1,11 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import "../UI/backAnimation.css";
 
 const BackAnimation = () => {
   // DOM selectors
 
-  const [stars, setStars] = useState(0);
-  const [starsCtx, setStarsCtx] = useState(null);
+  // const [stars, setStars] = useState(0);
+  // const [starsCtx, setStarsCtx] = useState(null);
   //   const starsCtx = null;
   //   const slider = null;
   //   const output = null;
@@ -18,7 +18,7 @@ const BackAnimation = () => {
     // global variables
     let screen,
       starsElements,
-      starsParams = { speed: 8, number: 300, extinction: 4 };
+      starsParams = { speed: 4, number: 300, extinction: 4 };
 
     // run stars
     setupStars();
@@ -75,6 +75,7 @@ const BackAnimation = () => {
         h: window.innerHeight,
         c: [window.innerWidth * 0.5, window.innerHeight * 0.5],
       };
+      
       window.cancelAnimationFrame(updateStars);
       stars.width = screen.w;
       stars.height = screen.h;
@@ -86,7 +87,7 @@ const BackAnimation = () => {
 
     // redraw the frame
     function updateStars() {
-      starsCtx.fillStyle = "black";
+      starsCtx.fillStyle = "#000";
       starsCtx.fillRect(0, 0, stars.width, stars.height);
       starsElements.forEach(function (s) {
         s.show();

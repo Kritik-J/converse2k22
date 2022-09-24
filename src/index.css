@@ -23,8 +23,8 @@ code {
 :root,
 #root,
 #docs-root {
-  --primary: #ffffff;
-  --secondary: #000000;
+  --primary: #111111;
+  --secondary: #ffffff;
 }
 
 html {
@@ -41,6 +41,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
+  background-color: var(--primary);
 }
 
 ::-webkit-scrollbar {

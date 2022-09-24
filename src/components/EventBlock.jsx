@@ -1,24 +1,28 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components/macro";
+import Poster from "../assets/Codathon.svg";
+import Bg from "../assets/bg.svg";
 
 const EventBlock = () => {
   return (
     <EventBlockWrapper>
       <EventPoster
-        src="https://images.unsplash.com/photo-1542423348-821c6bb30fe6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-        alt="event poster"
-      />
+        className="event-poster"
+        style={{
+          backgroundImage: `url(${Bg})`,
+        }}
+      >
+        <img src={Poster} alt="poster" />
+      </EventPoster>
 
       <EventInfo>
         <h1 className="event-title">Event Name</h1>
         <p className="event-description">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-          voluptates, quod, quia, voluptate quae voluptatem quibusdam
           necessitatibus quidem voluptas quos quas. Quisquam, quae. Quisquam
-          voluptates, quod, quia, voluptate quae voluptatem quibusdam
           necessitatibus quidem voluptas quos quas. Quisquam, quae. Quisquam
-          voluptates, quod, quia, voluptate quae voluptatem quibusdam
+          necessitatibus quidem voluptas quos quas. Quisquam, quae. Quisquam
         </p>
 
         <div className="event-cta">
@@ -36,59 +40,74 @@ const EventBlock = () => {
 };
 
 const EventBlockWrapper = styled.div`
-  max-width: 110rem;
   background: #212121;
   border-radius: 1rem;
+  margin-bottom: 2.5rem;
   display: flex;
-  margin-bottom: 2.4rem;
-  padding: 1.5rem;
+  align-items: center;
 
-  img {
-    margin-right: 2.4rem;
+  .event-poster {
+    border-radius: 1rem 0 0 1rem;
   }
 
   &:nth-child(odd) {
     flex-direction: row-reverse;
 
-    img {
-      margin-left: 2.4rem;
-      margin-right: 0;
+    .event-poster {
+      border-radius: 0 1rem 1rem 0;
     }
   }
 
   @media (max-width: 768px) {
     flex-direction: column;
-    img {
-      margin: 0;
+
+    .event-poster {
+      border-radius: 1rem 1rem 0 0;
     }
 
     &:nth-child(odd) {
       flex-direction: column;
 
-      img {
-        margin: 0;
+      .event-poster {
+        border-radius: 1rem 1rem 0 0;
       }
     }
   }
 `;
 
-const EventPoster = styled.img`
-  min-width: 28rem;
-  max-height: 32rem;
-  border-radius: 0.5rem;
-  display: block;
+const EventPoster = styled.div`
+  width: 50%;
+  height: 36rem;
+  padding: 2rem;
+  position: relative;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    height: 100%;
+    display: block;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.5);
+  }
 
   @media (max-width: 768px) {
-    min-width: 100%;
-    max-height: 36rem;
+    width: 100%;
   }
 `;
 
 const EventInfo = styled.div`
+  width: 50%;
   color: #fff;
+  padding: 2rem;
 
   .event-title {
-    font-size: 3.2rem;
+    font-size: 2.4rem;
     font-weight: 600;
     margin-bottom: 2rem;
   }
@@ -96,7 +115,7 @@ const EventInfo = styled.div`
   .event-description {
     font-size: 1.6rem;
     line-height: 2.4rem;
-    margin-bottom: 3.2rem;
+    margin-bottom: 2.5rem;
   }
 
   .event-cta {
@@ -105,7 +124,7 @@ const EventInfo = styled.div`
 
     .view-event,
     .participate-event {
-      background: #f2385a;
+      background: #e135a8;
       color: #fff;
       padding: 1rem 1.8rem;
       border-radius: 0.5rem;
@@ -122,8 +141,7 @@ const EventInfo = styled.div`
   }
 
   @media (max-width: 768px) {
-    margin-top: 2rem;
-
+    width: 100%;
     .event-title {
       font-size: 2rem;
       margin-bottom: 1rem;
