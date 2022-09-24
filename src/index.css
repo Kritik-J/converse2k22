@@ -94,3 +94,8 @@ h6 {
 p {
   font-size: 1.25rem;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

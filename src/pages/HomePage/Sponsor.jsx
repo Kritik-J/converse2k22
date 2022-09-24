@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components/macro";
 import ConverseLogo from "../../assets/Converse2k22.png";
 
@@ -10,17 +11,29 @@ const Sponsor = () => {
       </SponsorHeader>
 
       <SponsorContainer>
-        <div className="sponsor">
-          <img src={ConverseLogo} alt="" />
-        </div>
+        <Link to="/" className="sponsor__link">
+          <div className="sponsor">
+            <img src={ConverseLogo} alt="" className="sponsor__logo" />
 
-        <div className="sponsor">
-          <img src={ConverseLogo} alt="" />
-        </div>
+            <h3 className="sponsor__title">Converse 2k22</h3>
+          </div>
+        </Link>
 
-        <div className="sponsor">
-          <img src={ConverseLogo} alt="" />
-        </div>
+        <Link to="/" className="sponsor__link">
+          <div className="sponsor">
+            <img src={ConverseLogo} alt="" className="sponsor__logo" />
+
+            <h3 className="sponsor__title">Converse 2k22</h3>
+          </div>
+        </Link>
+
+        <Link to="/" className="sponsor__link">
+          <div className="sponsor">
+            <img src={ConverseLogo} alt="" className="sponsor__logo" />
+
+            <h3 className="sponsor__title">Converse 2k22</h3>
+          </div>
+        </Link>
       </SponsorContainer>
     </SponsorSection>
   );
@@ -59,20 +72,52 @@ const SponsorContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 4rem;
+  width: 100%;
+
+  .sponsor__link {
+    text-decoration: none;
+  }
 
   .sponsor {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     background: #212121;
     padding: 2.5rem;
     border-radius: 1rem;
     box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.5);
+    width: 100%;
 
-    img {
+    .sponsor__logo {
       width: 100%;
+      max-width: 16rem;
       height: 100%;
       display: block;
+    }
+
+    .sponsor__title {
+      margin-top: 2rem;
+      font-size: 1.6rem;
+      color: #fff;
+    }
+
+    &:hover {
+      scale: 1.1;
+      transition: all 0.25s ease-in-out;
+    }
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
+
+    .sponsor {
+      padding: 1.5rem;
+
+      .sponsor__title {
+        font-size: 1.4rem;
+      }
     }
   }
 `;

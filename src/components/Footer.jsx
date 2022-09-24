@@ -15,8 +15,8 @@ const Footer = () => {
           <FooterLinks>
             <FooterLinksHeader>Faculty Coordinators</FooterLinksHeader>
 
-            <FooterLink>Apurva Mandalaywala</FooterLink>
             <FooterLink>Ashish Kharwar</FooterLink>
+            <FooterLink>Apurva Mandalaywala</FooterLink>
           </FooterLinks>
 
           <FooterLinks>
