@@ -11,7 +11,16 @@ const EventPage = () => {
 };
 
 const EventScreen = styled.div`
-  display: grid;
+  min-height: 100vh;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 4rem;
+  padding-top: 11.2rem;
+
+  @media (max-width: 768px) {
+    padding: 2rem;
+    padding-top: 9.2rem;
+  }
 `;
 
 export default EventPage;

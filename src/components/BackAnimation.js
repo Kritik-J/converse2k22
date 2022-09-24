@@ -76,6 +76,7 @@ const BackAnimation = () => {
         c: [window.innerWidth * 0.5, window.innerHeight * 0.5],
       };
       
+      
       window.cancelAnimationFrame(updateStars);
       stars.width = screen.w;
       stars.height = screen.h;
@@ -93,8 +94,10 @@ const BackAnimation = () => {
         s.show();
         s.move();
       });
+      
       window.requestAnimationFrame(updateStars);
     }
+ 
   }, []);
   return (
     <div className="back_animation">

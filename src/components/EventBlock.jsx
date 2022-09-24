@@ -58,6 +58,10 @@ const EventBlockWrapper = styled.div`
     }
   }
 
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   @media (max-width: 768px) {
     flex-direction: column;
 

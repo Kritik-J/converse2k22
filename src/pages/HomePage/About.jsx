@@ -63,7 +63,7 @@ const AboutSection = styled.div`
     }
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1540px) {
     min-height: 768px;
   }
 `;
@@ -81,7 +81,7 @@ const AboutText = styled.div`
 
   .about__text {
     font-size: 1.6rem;
-    margin-bottom: 1rem;
+    margin-top: 1rem;
     font-weight: 500;
   }
 

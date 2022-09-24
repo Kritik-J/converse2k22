@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage";
 import Header from "./components/Header";
 import ScrollToTop from "./utils/ScrollToTop";
 import EventPage from "./pages/EventPage";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -12,8 +13,9 @@ function App() {
       <ScrollToTop />
       <Routes>
         <Route exact path="/" element={<HomePage />}></Route>
-        <Route path="/events/:id" element={<EventPage />}></Route>
+        <Route path="/event/:id" element={<EventPage />}></Route>
       </Routes>
+      <Footer/> 
     </Router>
   );
 }

@@ -64,6 +64,20 @@
 }
 /* Other styles */
 
+.converse-text {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .con_ani {
   background-size: 0.2em 100%;
   font: 16rem Open Sans, Impact;
