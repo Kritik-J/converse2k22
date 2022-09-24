@@ -119,7 +119,6 @@ const EventInfo = styled.div`
 
   .event-description {
     font-size: 1.6rem;
-    line-height: 2.4rem;
     margin-bottom: 2.5rem;
   }
 

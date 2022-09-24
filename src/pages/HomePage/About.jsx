@@ -74,7 +74,7 @@ const AboutText = styled.div`
   width: 50%;
 
   .about__title {
-    font-size: 4rem;
+    font-size: 3.6rem;
     font-weight: 700;
     margin-bottom: 2rem;
   }
@@ -82,7 +82,6 @@ const AboutText = styled.div`
   .about__text {
     font-size: 1.6rem;
     margin-top: 1rem;
-    font-weight: 500;
   }
 
   @media (max-width: 768px) {

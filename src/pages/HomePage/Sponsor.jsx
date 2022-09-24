@@ -57,7 +57,7 @@ const SponsorHeader = styled.div`
   color: #fff;
 
   .header__title {
-    font-size: 4rem;
+    font-size: 3.6rem;
     font-weight: 700;
   }
 
