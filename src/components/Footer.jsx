@@ -5,55 +5,57 @@ const Footer = () => {
   return (
     <FooterContainer>
       <FooterWrapper>
-        <FooterLinks>
-          <FooterLinksHeader>Head Of Department</FooterLinksHeader>
+        <FooterLinksContainer>
+          <FooterLinks>
+            <FooterLinksHeader>Head Of Department</FooterLinksHeader>
 
-          <FooterLink>Mita Parekh</FooterLink>
-        </FooterLinks>
+            <FooterLink>Mita Parekh</FooterLink>
+          </FooterLinks>
 
-        <FooterLinks>
-          <FooterLinksHeader>Faculty Coordinators</FooterLinksHeader>
+          <FooterLinks>
+            <FooterLinksHeader>Faculty Coordinators</FooterLinksHeader>
 
-          <FooterLink>Apurva Mandalaywala</FooterLink>
-          <FooterLink>Ashish Kharwar</FooterLink>
-        </FooterLinks>
+            <FooterLink>Apurva Mandalaywala</FooterLink>
+            <FooterLink>Ashish Kharwar</FooterLink>
+          </FooterLinks>
 
-        <FooterLinks>
-          <FooterLinksHeader>Student Coordinators</FooterLinksHeader>
+          <FooterLinks>
+            <FooterLinksHeader>Student Coordinators</FooterLinksHeader>
 
-          <FooterLink>Aayush Vataliya</FooterLink>
-          <FooterLink>Divya Mashruwala</FooterLink>
-          <FooterLink>Kirtan Battiwala</FooterLink>
-          <FooterLink>Meet Vaghasiya</FooterLink>
-        </FooterLinks>
+            <FooterLink>Aayush Vataliya</FooterLink>
+            <FooterLink>Divya Mashruwala</FooterLink>
+            <FooterLink>Kirtan Battiwala</FooterLink>
+            <FooterLink>Meet Vaghasiya</FooterLink>
+          </FooterLinks>
 
-        <FooterLinks>
-          <FooterLinksHeader>Web Developer</FooterLinksHeader>
+          <FooterLinks>
+            <FooterLinksHeader>Web Developer</FooterLinksHeader>
 
-          <FooterLink>Alpesh Nikumbh</FooterLink>
-          <FooterLink>Kritik Jiyaviya</FooterLink>
-          <FooterLink>Shubham Jariwala</FooterLink>
-        </FooterLinks>
+            <FooterLink>Alpesh Nikumbh</FooterLink>
+            <FooterLink>Kritik Jiyaviya</FooterLink>
+            <FooterLink>Shubham Jariwala</FooterLink>
+          </FooterLinks>
 
-        <FooterLinks>
-          <FooterLinksHeader>Poster Designer</FooterLinksHeader>
+          <FooterLinks>
+            <FooterLinksHeader>Poster Designer</FooterLinksHeader>
 
-          <FooterLink>Bhagya Patel</FooterLink>
-          <FooterLink>Krishna Kalani</FooterLink>
-          <FooterLink>Kritik Jiyaviya</FooterLink>
-        </FooterLinks>
+            <FooterLink>Bhagya Patel</FooterLink>
+            <FooterLink>Krishna Kalani</FooterLink>
+            <FooterLink>Kritik Jiyaviya</FooterLink>
+          </FooterLinks>
+        </FooterLinksContainer>
+
+        <FooterText>© Converse 2022 - All Rights Reserved</FooterText>
       </FooterWrapper>
-
-      <FooterText>© Converse 2022 - All Rights Reserved</FooterText>
     </FooterContainer>
   );
 };
 
 const FooterText = styled.p`
   font-size: 1.25rem;
-  text-align: center;
   color: #fff;
   margin-top: 2.5rem;
+  text-align: center;
 `;
 
 const FooterContainer = styled.footer`
@@ -63,21 +65,28 @@ const FooterContainer = styled.footer`
 `;
 
 const FooterWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem 4rem;
+
+  @media (max-width: 768px) {
+    padding: 2rem;
+  }
+`;
+
+const FooterLinksContainer = styled.div`
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 1rem;
   color: #fff;
   max-width: 120rem;
   margin: 0 auto;
-  padding: 2rem 4rem;
 
   @media (max-width: 1000px) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 2rem;
-  }
-
-  @media (max-width: 768px) {
-    padding: 2rem;
   }
 `;
 
