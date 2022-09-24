@@ -60,11 +60,6 @@ const FooterContainer = styled.footer`
   width: 100%;
   background-color: #1a1a1a;
   border-top: 0.2rem solid #3d3d3d;
-  padding: 2rem 4rem;
-
-  @media (max-width: 768px) {
-    padding: 2rem;
-  }
 `;
 
 const FooterWrapper = styled.div`
@@ -74,10 +69,15 @@ const FooterWrapper = styled.div`
   color: #fff;
   max-width: 120rem;
   margin: 0 auto;
+  padding: 2rem 4rem;
 
   @media (max-width: 1000px) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 2rem;
+  }
+
+  @media (max-width: 768px) {
+    padding: 2rem;
   }
 `;
 
