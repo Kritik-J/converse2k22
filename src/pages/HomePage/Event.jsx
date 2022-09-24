@@ -62,9 +62,9 @@ const EventSection = styled.div`
     padding: 2rem;
   }
 
-  @media (min-width: 1540px) {
+  /* @media (min-width: 1540px) {
     min-height: 768px;
-  }
+  } */
 `;
 
 const EventHeader = styled.div`
