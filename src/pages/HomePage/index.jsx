@@ -2,15 +2,18 @@ import Home from "./Home";
 import Event from "./Event";
 import About from "./About";
 import styled from "styled-components/macro";
+import Sponsor from "./Sponsor";
 
 const HomePage = () => {
   return (
     <HomeScreen>
       <Home />
       <Border />
-      <Event id="events" />
+      <Event />
       <Border />
-      <About id="about" />
+      <Sponsor />
+      <Border />
+      <About />
     </HomeScreen>
   );
 };

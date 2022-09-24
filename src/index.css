@@ -42,6 +42,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
   background-color: var(--primary);
+  color: var(--secondary);
 }
 
 ::-webkit-scrollbar {

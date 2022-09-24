@@ -100,6 +100,10 @@ const NavLink = styled.div`
     font-size: 1.4rem;
     padding: 0.4rem 1.2rem;
   }
+
+  &:hover {
+    scale: 1.14;
+  }
 `;
 
 export default Header;

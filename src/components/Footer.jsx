@@ -68,6 +68,8 @@ const FooterWrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
   padding: 2rem 4rem;
 
   @media (max-width: 768px) {
@@ -81,8 +83,6 @@ const FooterLinksContainer = styled.div`
   grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 1rem;
   color: #fff;
-  max-width: 120rem;
-  margin: 0 auto;
 
   @media (max-width: 1000px) {
     grid-template-columns: repeat(2, minmax(0, 1fr));

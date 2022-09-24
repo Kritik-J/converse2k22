@@ -45,6 +45,7 @@ const EventBlockWrapper = styled.div`
   margin-bottom: 2.5rem;
   display: flex;
   align-items: center;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.5);
 
   .event-poster {
     border-radius: 1rem 0 0 1rem;
@@ -135,11 +136,18 @@ const EventInfo = styled.div`
       font-size: 1.4rem;
       font-weight: 600;
       margin-right: 1.5rem;
-      transition: all 0.2s ease-in-out;
       text-decoration: none;
+
+      transition: all 0.25s ease-in-out;
 
       &:last-child {
         margin-right: 0;
+      }
+
+      &:hover {
+        background: #212121;
+        color: #e135a8;
+        border: 0.2rem solid #e135a8;
       }
     }
   }

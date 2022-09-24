@@ -8,7 +8,7 @@ const About = () => {
       <img src={ConverseLogo} alt="converse-logo" className="converse__logo" />
 
       <AboutText>
-        <h1 className="about__title">About</h1>
+        <h1 className="about__title">About Us</h1>
 
         <p className="about__text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
