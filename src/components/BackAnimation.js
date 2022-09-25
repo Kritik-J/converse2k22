@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "../UI/backAnimation.css";
+import styled from "styled-components/macro";
 
 const getWidth = () =>
   window.innerWidth ||
@@ -14,14 +14,6 @@ const getHeigth = () =>
 const BackAnimation = () => {
   const [width, setWidth] = useState(getWidth());
   const [height, setHeight] = useState(getHeigth());
-
-  // DOM selectors
-
-  // const [stars, setStars] = useState(0);
-  // const [starsCtx, setStarsCtx] = useState(null);
-  //   const starsCtx = null;
-  //   const slider = null;
-  //   const output = null;
 
   useEffect(() => {
     const resizeListener = () => {
@@ -39,15 +31,13 @@ const BackAnimation = () => {
   useEffect(() => {
     const stars = document.getElementById("stars");
     const starsCtx = stars.getContext("2d");
-    // const slider = document.querySelector(".slider input");
-    // const output = document.querySelector("#speed");
 
     // global variables
     let screen,
       starsElements,
       starsParams = {
         speed: width > 768 ? 6 : 4,
-        number: 300,
+        number: width > 768 ? 300 : 200,
         extinction: 4,
       };
 
@@ -55,14 +45,6 @@ const BackAnimation = () => {
     setupStars();
     updateStars();
 
-    // handle slider
-    // output.innerHTML = 3;
-    // slider.oninput = function () {
-    //   output.innerHTML = 3.5;
-    //   starsParams.speed = 6;
-    // };
-
-    // update stars on resize to keep them centered
     window.onresize = function () {
       setupStars();
     };
@@ -99,7 +81,6 @@ const BackAnimation = () => {
       };
     }
 
-    // setup <canvas>, create all the starts
     function setupStars() {
       screen = {
         w: width,
@@ -129,10 +110,32 @@ const BackAnimation = () => {
     }
   }, [width, height]);
   return (
-    <div className="back_animation">
+    <BackgroundContainer>
       <canvas id="stars"></canvas>
-    </div>
+    </BackgroundContainer>
   );
 };
+
+const BackgroundContainer = styled.div`
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -999;
+  overflow: hidden;
+  
+  #stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -997;
+  }
+`;
 
 export default BackAnimation;

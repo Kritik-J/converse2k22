@@ -26,14 +26,16 @@ const Footer = () => {
             <FooterLink>Divya Mashruwala</FooterLink>
             <FooterLink>Kirtan Battiwala</FooterLink>
             <FooterLink>Meet Vaghasiya</FooterLink>
+            <FooterLink> Honey Bhanushali</FooterLink>
+            <FooterLink>Khushi Jariwala</FooterLink>
           </FooterLinks>
 
           <FooterLinks>
             <FooterLinksHeader>Web Developer</FooterLinksHeader>
 
-            <FooterLink>Alpesh Nikumbh</FooterLink>
-            <FooterLink>Kritik Jiyaviya</FooterLink>
             <FooterLink>Shubham Jariwala</FooterLink>
+            <FooterLink>Kritik Jiyaviya</FooterLink>
+            <FooterLink>Alpesh Nikumbh</FooterLink>
           </FooterLinks>
 
           <FooterLinks>
@@ -42,6 +44,13 @@ const Footer = () => {
             <FooterLink>Bhagya Patel</FooterLink>
             <FooterLink>Krishna Kalani</FooterLink>
             <FooterLink>Kritik Jiyaviya</FooterLink>
+          </FooterLinks>
+
+          <FooterLinks>
+            <FooterLinksHeader>Decoration Team</FooterLinksHeader>
+
+            <FooterLink>Honey Bhanushali</FooterLink>
+            <FooterLink>Khushi Jariwala</FooterLink>
           </FooterLinks>
         </FooterLinksContainer>
 
@@ -80,7 +89,7 @@ const FooterWrapper = styled.div`
 const FooterLinksContainer = styled.div`
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1rem;
   color: #fff;
 
