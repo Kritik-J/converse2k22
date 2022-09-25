@@ -10,102 +10,106 @@ const Schedule = () => {
 
       <ScheduleTableContainer>
         <ScheduleTable>
-          <tr className="table__header__row">
-            <th className="table__heading">Day & Date </th>
+          <thead>
+            <tr className="table__header__row">
+              <th className="table__heading">Day &#38; Date </th>
 
-            <th className="table__heading">Time</th>
+              <th className="table__heading">Time</th>
 
-            <th className="table__heading">Event</th>
+              <th className="table__heading">Event</th>
 
-            <th className="table__heading">Venue</th>
-          </tr>
+              <th className="table__heading">Venue</th>
+            </tr>
+          </thead>
 
-          <tr className="table__body__row">
-            {/* Day 1 Start */}
+          <tbody>
+            <tr className="table__body__row">
+              {/* Day 1 Start */}
 
-            <td className="table__body__col" rowspan="4">
-              30<sup>th</sup> September 2022
-            </td>
+              <td className="table__body__col" rowSpan="4">
+                30<sup>th</sup> September 2022
+              </td>
 
-            <td className="table__body__col">9:15 AM - 10:15 AM</td>
+              <td className="table__body__col">9:15 AM - 10:15 AM</td>
 
-            <td className="table__body__col">PY-IT (round 1)</td>
+              <td className="table__body__col">PY-IT &#40;round 1&#41;</td>
 
-            <td className="table__body__col">-</td>
-          </tr>
+              <td className="table__body__col">-</td>
+            </tr>
 
-          <tr className="table__body__row">
-            <td className="table__body__col">10:30 AM - 11:30 AM</td>
+            <tr className="table__body__row">
+              <td className="table__body__col">10:30 AM - 11:30 AM</td>
 
-            <td className="table__body__col">Logo Hunt</td>
+              <td className="table__body__col">Logo Hunt</td>
 
-            <td className="table__body__col">-</td>
-          </tr>
+              <td className="table__body__col">-</td>
+            </tr>
 
-          <tr className="table__body__row">
-            <td className="table__body__col">12:30 PM - 1:30 PM</td>
+            <tr className="table__body__row">
+              <td className="table__body__col">12:30 PM - 1:30 PM</td>
 
-            <td className="table__body__col">Codathon</td>
+              <td className="table__body__col">Codathon</td>
 
-            <td className="table__body__col">-</td>
-          </tr>
+              <td className="table__body__col">-</td>
+            </tr>
 
-          <tr className="table__body__row">
-            <td className="table__body__col">1:30 PM - 2:30 PM</td>
+            <tr className="table__body__row">
+              <td className="table__body__col">1:30 PM - 2:30 PM</td>
 
-            <td className="table__body__col">PY-IT (round 2)</td>
+              <td className="table__body__col">PY-IT &#40;round 2&#41;</td>
 
-            <td className="table__body__col">-</td>
-          </tr>
+              <td className="table__body__col">-</td>
+            </tr>
 
-          {/* Day 1 End */}
+            {/* Day 1 End */}
 
-          <tr className="table__body__row" c>
-            <td className="table__body__col" colspan="4">
-              &nbsp;
-            </td>
-          </tr>
+            <tr className="table__body__row">
+              <td className="table__body__col" colSpan="4">
+                &nbsp;
+              </td>
+            </tr>
 
-          {/* Day 2 Start */}
+            {/* Day 2 Start */}
 
-          <tr className="table__body__row">
-            <td className="table__body__col" rowspan="4">
-              1<sup>st</sup> October 2022
-            </td>
+            <tr className="table__body__row">
+              <td className="table__body__col" rowSpan="4">
+                1<sup>st</sup> October 2022
+              </td>
 
-            <td className="table__body__col">9:15 AM - 10:15 AM</td>
+              <td className="table__body__col">9:15 AM - 10:15 AM</td>
 
-            <td className="table__body__col">Bug Buzz</td>
+              <td className="table__body__col">Bug Buzz</td>
 
-            <td className="table__body__col">-</td>
-          </tr>
+              <td className="table__body__col">-</td>
+            </tr>
 
-          <tr className="table__body__row">
-            <td className="table__body__col">10:30 AM - 11:30 AM</td>
+            <tr className="table__body__row">
+              <td className="table__body__col">10:30 AM - 11:30 AM</td>
 
-            <td className="table__body__col">IT Quiz</td>
+              <td className="table__body__col">IT Quiz</td>
 
-            <td className="table__body__col">-</td>
-          </tr>
+              <td className="table__body__col">-</td>
+            </tr>
 
-          <tr className="table__body__row">
-            <td className="table__body__col">12:30 PM - 1:30 PM</td>
+            <tr className="table__body__row">
+              <td className="table__body__col">12:30 PM - 1:30 PM</td>
 
-            <td className="table__body__col">PY-IT (round 3)</td>
+              <td className="table__body__col">PY-IT &#40;round 3&#41;</td>
 
-            <td className="table__body__col">-</td>
-          </tr>
+              <td className="table__body__col">-</td>
+            </tr>
 
-          <tr className="table__body__row">
-            <td className="table__body__col">3:00 PM onwards</td>
+            <tr className="table__body__row">
+              <td className="table__body__col">3:00 PM onwards</td>
 
-            <td className="table__body__col col__long__text">
-              Valedictory, prize and certificate distribution ( Department
-              level)
-            </td>
+              <td className="table__body__col col__long__text">
+                Valedictory, prize and certificate distribution &#40;Department
+                level&#41;
+              </td>
 
-            <td className="table__body__col">-</td>
-          </tr>
+              <td className="table__body__col">-</td>
+            </tr>
+          </tbody>
 
           {/* Day 2 End */}
         </ScheduleTable>

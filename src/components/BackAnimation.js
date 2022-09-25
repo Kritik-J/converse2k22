@@ -1,7 +1,20 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "../UI/backAnimation.css";
 
+const getWidth = () =>
+  window.innerWidth ||
+  document.documentElement.clientWidth ||
+  document.body.clientWidth;
+
+const getHeigth = () =>
+  window.innerHeight ||
+  document.documentElement.clientHeight ||
+  document.body.clientHeight;
+
 const BackAnimation = () => {
+  const [width, setWidth] = useState(getWidth());
+  const [height, setHeight] = useState(getHeigth());
+
   // DOM selectors
 
   // const [stars, setStars] = useState(0);
@@ -9,6 +22,20 @@ const BackAnimation = () => {
   //   const starsCtx = null;
   //   const slider = null;
   //   const output = null;
+
+  useEffect(() => {
+    const resizeListener = () => {
+      setWidth(getWidth());
+      setHeight(getHeigth());
+    };
+
+    window.addEventListener("resize", resizeListener);
+
+    return () => {
+      window.removeEventListener("resize", resizeListener);
+    };
+  }, []);
+
   useEffect(() => {
     const stars = document.getElementById("stars");
     const starsCtx = stars.getContext("2d");
@@ -18,7 +45,11 @@ const BackAnimation = () => {
     // global variables
     let screen,
       starsElements,
-      starsParams = { speed: 4, number: 300, extinction: 4 };
+      starsParams = {
+        speed: width > 768 ? 6 : 4,
+        number: 300,
+        extinction: 4,
+      };
 
     // run stars
     setupStars();
@@ -71,12 +102,11 @@ const BackAnimation = () => {
     // setup <canvas>, create all the starts
     function setupStars() {
       screen = {
-        w: window.innerWidth,
-        h: window.innerHeight,
-        c: [window.innerWidth * 0.5, window.innerHeight * 0.5],
+        w: width,
+        h: height,
+        c: [width * 0.5, height * 0.5],
       };
-      
-      
+
       window.cancelAnimationFrame(updateStars);
       stars.width = screen.w;
       stars.height = screen.h;
@@ -94,11 +124,10 @@ const BackAnimation = () => {
         s.show();
         s.move();
       });
-      
+
       window.requestAnimationFrame(updateStars);
     }
- 
-  }, []);
+  }, [width, height]);
   return (
     <div className="back_animation">
       <canvas id="stars"></canvas>
