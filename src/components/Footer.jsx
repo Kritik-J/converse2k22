@@ -99,6 +99,7 @@ const FooterLinksHeader = styled.h3`
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
   font-weight: 600;
+  color: var(--tertiary);
 
   @media screen and (max-width: 768px) {
     font-size: 1.6rem;
