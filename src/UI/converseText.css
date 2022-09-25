@@ -64,6 +64,57 @@
 }
 /* Other styles */
 
+.text2 {
+  fill: none;
+  stroke-width: 3;
+  stroke-linejoin: round;
+  stroke-dasharray: 70 330;
+  stroke-dashoffset: 0;
+  -webkit-animation: stroke 6s infinite linear;
+  animation: stroke 6s infinite linear;
+}
+
+.text2:nth-child(5n + 1) {
+  /* stroke: #f2385a; */
+  stroke: #e0bbe4;
+  /* stroke: #677db9; */
+
+  -webkit-animation-delay: -1.2s;
+  animation-delay: -1.2s;
+}
+
+.text2:nth-child(5n + 2) {
+  /* stroke: #f5a503; */
+  stroke: #957dad;
+  /* stroke: #86a9e7; */
+  -webkit-animation-delay: -2.4s;
+  animation-delay: -2.4s;
+}
+
+.text2:nth-child(5n + 3) {
+  /* stroke: #e9f1df; */
+  stroke: #d291bc;
+  /* stroke: #ba1e68; */
+  -webkit-animation-delay: -3.6s;
+  animation-delay: -3.6s;
+}
+
+.text2:nth-child(5n + 4) {
+  /* stroke: #56d9cd; */
+  stroke: #fec8d8;
+  /* stroke: #5643fd; */
+  -webkit-animation-delay: -4.8s;
+  animation-delay: -4.8s;
+}
+
+.text2:nth-child(5n + 5) {
+  /* stroke: #3aa1bf; */
+  stroke: #ffdfd3;
+  /* stroke: #7649fe; */
+  -webkit-animation-delay: -6s;
+  animation-delay: -6s;
+}
+
 .converse-text {
   position: absolute;
   overflow: hidden;
@@ -85,15 +136,31 @@
   margin: 0;
 }
 
+.con_ani_2{
+  background-size: 0.2em 100%;
+  font: 10rem Open Sans, Impact;
+  text-transform: uppercase;
+  margin: 0;
+}
+
 
 @media (max-width: 768px) {
   .con_ani {
     font: 8rem Open Sans, Impact;
   }
 
+  .con_ani_2 {
+    font: 7.2rem Open Sans, Impact;
+  }
+
   .text {
     fill: none;
     stroke-width: 4;
+  }
+
+  .text2{
+    fill: none;
+    stroke-width: 3;
   }
 }
 
@@ -101,8 +168,17 @@
   .con_ani {
     font: 6rem Open Sans, Impact;
   }
+  .con_ani_2 {
+    font: 5rem Open Sans, Impact;
+    /* top:100%; */
+  }
   
   .text {
+    fill: none;
+    stroke-width: 3;
+  }
+
+  .text2{
     fill: none;
     stroke-width: 3;
   }
