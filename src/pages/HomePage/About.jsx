@@ -55,10 +55,13 @@ const AboutSection = styled.div`
   @media (max-width: 768px) {
     padding: 2rem;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    min-height: 100%;
 
     .converse__logo {
-      width: calc(100% - 4rem);
+      width: calc(100% - 8rem);
+      /* width: calc(100% - 4rem); */
+      height: auto;
       margin-bottom: 4rem;
     }
   }

@@ -25,6 +25,7 @@ code {
 #docs-root {
   --primary: #111111;
   --secondary: #ffffff;
+  --tertiary: #e135a8;
 }
 
 html {

@@ -91,7 +91,7 @@ const NavLink = styled.div`
   font-weight: 500;
   color: #fff;
   cursor: pointer;
-  border: 2px solid #e135a8;
+  border: 2px solid var(--tertiary);
   padding: 0.5rem 1.5rem;
   border-radius: 0.5rem;
   transition: all 0.3s ease-in-out;

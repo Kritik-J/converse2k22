@@ -95,7 +95,7 @@ const EventToogle = styled.div`
     top: 0;
     position: absolute;
     height: 100%;
-    background: #e135a8;
+    background: var(--tertiary);
     border-radius: 4rem;
     transition: 0.5s;
 

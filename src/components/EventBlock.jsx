@@ -128,7 +128,7 @@ const EventInfo = styled.div`
 
     .view-event,
     .participate-event {
-      background: #e135a8;
+      background: var(--tertiary);
       color: #fff;
       padding: 1rem 1.8rem;
       border-radius: 0.5rem;
