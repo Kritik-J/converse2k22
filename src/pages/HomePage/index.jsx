@@ -3,6 +3,7 @@ import Event from "./Event";
 import About from "./About";
 import styled from "styled-components/macro";
 import Sponsor from "./Sponsor";
+import Schedule from "./Schedule";
 
 const HomePage = () => {
   return (
@@ -10,6 +11,8 @@ const HomePage = () => {
       <Home />
       <Border />
       <Event />
+      <Border />
+      <Schedule />
       <Border />
       <Sponsor />
       <Border />

@@ -85,7 +85,7 @@ const SponsorContainer = styled.div`
     flex-direction: column;
     background: #212121;
     padding: 2.5rem;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.5);
     width: 100%;
 

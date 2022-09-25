@@ -41,21 +41,21 @@ const EventBlock = () => {
 
 const EventBlockWrapper = styled.div`
   background: #212121;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   margin-bottom: 2.5rem;
   display: flex;
   align-items: center;
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.5);
 
   .event-poster {
-    border-radius: 1rem 0 0 1rem;
+    border-radius: 0.5rem 0 0 0.5rem;
   }
 
   &:nth-child(odd) {
     flex-direction: row-reverse;
 
     .event-poster {
-      border-radius: 0 1rem 1rem 0;
+      border-radius: 0 0.5rem 0.5rem 0;
     }
   }
 
