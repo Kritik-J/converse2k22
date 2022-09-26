@@ -5,7 +5,7 @@
         "name": "PY-IT",
         "description": "PY-IT (Practice Your Interview Techniques) is a virtual job hiring event which will not only give you an experience for your real time job recruitment process but also give you a life changing experience. This event will test your aptitude skills, interpersonal skills and soft skills.",
         "poster": " ../assets/posters/PyIT.png",
-        "link": "http://converse2k22.triple5.online:3000/"
+        "link": "http://converse2k22.triple5.online:3000/pyit"
     },
     {
         "id": "2",
@@ -13,7 +13,7 @@
         "name": "Logo Hunt",
         "description": "LOGO-HUNT is an Event in which you have to Identify the Logos and Done it in shortest amount of time. Basically it is a Quick guessing Event which Tests your General and Professional Knowledge.",
         "poster": "../assets/posters/Logo Hunt.png",
-        "link": "http://converse2k22.triple5.online:3000/"
+        "link": "http://converse2k22.triple5.online:3000/logoHunt"
     },
     {
         "id": "3",
@@ -21,7 +21,7 @@
         "name": "Codathon",
         "description": "CODATHON is a competitive coding event. Inspired from various well known coding events, CODATHON is made for experiencing the feelings you go through in any coding event or coding rounds during the recruitment process. Thrill your mind and have an adventure in the stream of problems!",
         "poster": "../assets/posters/Codathon.png",
-        "link": "http://converse2k22.triple5.online:3000/"
+        "link": "http://converse2k22.triple5.online:3000/codathon"
     },
     {
         "id": "4",
@@ -29,7 +29,7 @@
         "name": "Bug Buzz",
         "description": "Bug Buzz is a coding/programing related event which would help you as a programmer to strengthen the programming skills within you. This event is unlike any other coding/programming event. In this event participant has to debug the given program rather than writing it, as debugging a code is more complex than making a code from scratch.",
         "poster": "../assets/posters/Bug Buzz.png",   
-        "link": "http://converse2k22.triple5.online:3000/"
+        "link": "http://converse2k22.triple5.online:3000/bigbuzz"
     },
     {
         "id": "5",
@@ -37,6 +37,6 @@
         "name": "IT Quiz",
         "description": "With this quiz , we are giving all the participants an opportunity to test their IT skills and programming logic. \nThe participant who answers all the questions correctly and the earliest , will recieve a cash price and a winning certificate .\nAll the participants will get a participation certificate.",
         "poster": "../assets/posters/IT Quiz.png",
-        "link": "http://converse2k22.triple5.online:3000/"
+        "link": "http://converse2k22.triple5.online:3000/itQuiz"
     }
 ]

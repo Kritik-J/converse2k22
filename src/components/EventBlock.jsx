@@ -1,7 +1,7 @@
 import React from "react";
 // import { Link } from "react-router-dom";s
 import styled from "styled-components/macro";
-import Bg from "../assets/bg.png";
+import Bg from "../assets/bg.webp";
 
 const EventBlock = ({ event }) => {
   return (
@@ -17,11 +17,9 @@ const EventBlock = ({ event }) => {
         <h1 className="event-title">{event.name}</h1>
         <p className="event-description">{event.description}</p>
 
-        <div className="event-cta">
-          <a href={event.link} className="view-event">
-            View More
-          </a>
-        </div>
+        <a href={event.link} className="view-event">
+          View More
+        </a>
       </EventInfo>
     </EventBlockWrapper>
   );
@@ -108,62 +106,56 @@ const EventInfo = styled.div`
 
   .event-title {
     font-size: 2.4rem;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 2rem;
+    color: var(--tertiary);
   }
 
   .event-description {
     font-size: 1.6rem;
     margin-bottom: 2.5rem;
+    line-height: 1.8;
   }
 
-  .event-cta {
-    display: flex;
-    align-items: center;
+  .view-event {
+    background: var(--tertiary);
+    color: #fff;
+    padding: 1rem 1.8rem;
+    border-radius: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-right: 1.5rem;
+    text-decoration: none;
 
-    .view-event,
-    .participate-event {
-      background: var(--tertiary);
-      color: #fff;
-      padding: 1rem 1.8rem;
-      border-radius: 0.5rem;
-      font-size: 1.4rem;
-      font-weight: 600;
-      margin-right: 1.5rem;
-      text-decoration: none;
+    transition: all 0.25s ease-in-out;
 
-      transition: all 0.25s ease-in-out;
+    &:last-child {
+      margin-right: 0;
+    }
 
-      &:last-child {
-        margin-right: 0;
-      }
-
-      &:hover {
-        background: #212121;
-        color: #e135a8;
-        border: 0.2rem solid #e135a8;
-      }
+    &:hover {
+      background: #212121;
+      color: #e135a8;
+      border: 0.2rem solid #e135a8;
     }
   }
 
   @media (max-width: 768px) {
     width: 100%;
     .event-title {
-      font-size: 2rem;
+      font-size: 1.8rem;
       margin-bottom: 1rem;
     }
 
     .event-description {
       font-size: 1.4rem;
       margin-bottom: 2rem;
+      line-height: 1.5;
     }
 
-    .event-cta {
-      .view-event,
-      .participate-event {
-        padding: 0.8rem 1.5rem;
-        font-size: 1.25rem;
-      }
+    .view-event {
+      padding: 0.8rem 1.5rem;
+      font-size: 1.25rem;
     }
   }
 `;

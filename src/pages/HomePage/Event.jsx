@@ -1,7 +1,9 @@
 import React from "react";
 import styled from "styled-components/macro";
-import EventBlock from "../../components/EventBlock";
+import LoadEventBlock from "../../components/LoadEventBlock";
 import events from "../../events.json";
+
+const EventBlock = React.lazy(() => import("../../components/EventBlock"));
 
 const Event = () => {
   const [eventToogle, setEventToogle] = React.useState(0);
@@ -38,7 +40,9 @@ const Event = () => {
         {eventToogle === 0 ? (
           <>
             {events.map((event) => (
-              <EventBlock event={event} key={event.id} />
+              <React.Suspense fallback={<LoadEventBlock />} key={event.id}>
+                <EventBlock event={event} />
+              </React.Suspense>
             ))}
           </>
         ) : (

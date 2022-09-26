@@ -10,7 +10,7 @@ const About = () => {
       <AboutText>
         <h1 className="about__title">About Us</h1>
 
-        <p className="about__text">
+        <p className="about__paragraph">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
           voluptates, quod, quia, voluptate quae voluptatem quibusdam
           necessitatibus quidem voluptatum quos quas. Quisquam, quae. Quisquam
@@ -18,7 +18,7 @@ const About = () => {
           necessitatibus quidem voluptatum quos quas. Quisquam, quae.
         </p>
 
-        <p className="about__text">
+        <p className="about__paragraph">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
           voluptates, quod, quia, voluptate quae voluptatem quibusdam
           necessitatibus quidem voluptatum quos quas. Quisquam, quae. Quisquam
@@ -26,7 +26,7 @@ const About = () => {
           necessitatibus quidem voluptatum quos quas. Quisquam, quae.
         </p>
 
-        <p className="about__text">
+        <p className="about__paragraph">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
           voluptates, quod, quia, voluptate quae voluptatem quibusdam
           necessitatibus quidem voluptatum quos quas. Quisquam, quae. Quisquam
@@ -82,9 +82,10 @@ const AboutText = styled.div`
     margin-bottom: 2rem;
   }
 
-  .about__text {
+  .about__paragraph {
     font-size: 1.6rem;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
+    line-height: 1.8;
   }
 
   @media (max-width: 768px) {
@@ -95,8 +96,10 @@ const AboutText = styled.div`
       font-size: 2.4rem;
     }
 
-    .about__text {
+    .about__paragraph {
       font-size: 1.4rem;
+      margin-top: 1rem;
+      line-height: 1.6;
     }
   }
 `;
