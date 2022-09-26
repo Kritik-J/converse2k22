@@ -276,6 +276,10 @@ const SponsorCard = styled.div`
   }
 
   @media (max-width: 768px) {
+    &:hover {
+      scale: 1.02;
+    }
+
     .sponsor__logo {
       margin-right: 0;
     }
