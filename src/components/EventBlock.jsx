@@ -1,38 +1,26 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";s
 import styled from "styled-components/macro";
-import Poster from "../assets/Codathon.svg";
-import Bg from "../assets/bg.svg";
+import Bg from "../assets/bg.png";
 
-const EventBlock = () => {
+const EventBlock = ({ event }) => {
   return (
     <EventBlockWrapper>
       <EventPoster
         className="event-poster"
-        style={{
-          backgroundImage: `url(${Bg})`,
-        }}
+        style={{ backgroundImage: `url(${Bg})` }}
       >
-        <img src={Poster} alt="poster" />
+        <img src={event.poster} alt="poster" />
       </EventPoster>
 
       <EventInfo>
-        <h1 className="event-title">Event Name</h1>
-        <p className="event-description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-          necessitatibus quidem voluptas quos quas. Quisquam, quae. Quisquam
-          necessitatibus quidem voluptas quos quas. Quisquam, quae. Quisquam
-          necessitatibus quidem voluptas quos quas. Quisquam, quae. Quisquam
-        </p>
+        <h1 className="event-title">{event.name}</h1>
+        <p className="event-description">{event.description}</p>
 
         <div className="event-cta">
-          <Link to="/event/1" className="view-event">
-            View Event
-          </Link>
-
-          <Link to="/event/1" className="participate-event">
-            Participate
-          </Link>
+          <a href={event.link} className="view-event">
+            View More
+          </a>
         </div>
       </EventInfo>
     </EventBlockWrapper>
@@ -49,6 +37,13 @@ const EventBlockWrapper = styled.div`
 
   .event-poster {
     border-radius: 0.5rem 0 0 0.5rem;
+
+    img {
+      &:hover {
+        transform: scale(1.05);
+        transition: all 0.25s;
+      }
+    }
   }
 
   &:nth-child(odd) {

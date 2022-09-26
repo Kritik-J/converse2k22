@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
-import Poster from "../../assets/Codathon.svg";
+import Poster from "../../assets/posters/Codathon.png";
 
 const EventPage = () => {
   return (

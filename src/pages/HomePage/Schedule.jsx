@@ -30,7 +30,7 @@ const Schedule = () => {
                 30<sup>th</sup> September 2022
               </td>
 
-              <td className="table__body__col">9:15 AM - 10:15 AM</td>
+              <td className="table__body__col">09:15 AM - 10:15 AM</td>
 
               <td className="table__body__col">PY-IT &#40;round 1&#41;</td>
 
@@ -46,7 +46,7 @@ const Schedule = () => {
             </tr>
 
             <tr className="table__body__row">
-              <td className="table__body__col">12:30 PM - 1:30 PM</td>
+              <td className="table__body__col">12:30 PM - 01:30 PM</td>
 
               <td className="table__body__col">Codathon</td>
 
@@ -54,7 +54,7 @@ const Schedule = () => {
             </tr>
 
             <tr className="table__body__row">
-              <td className="table__body__col">1:30 PM - 2:30 PM</td>
+              <td className="table__body__col">01:30 PM - 02:30 PM</td>
 
               <td className="table__body__col">PY-IT &#40;round 2&#41;</td>
 
@@ -76,7 +76,7 @@ const Schedule = () => {
                 1<sup>st</sup> October 2022
               </td>
 
-              <td className="table__body__col">9:15 AM - 10:15 AM</td>
+              <td className="table__body__col">09:15 AM - 10:15 AM</td>
 
               <td className="table__body__col">Bug Buzz</td>
 
@@ -92,7 +92,7 @@ const Schedule = () => {
             </tr>
 
             <tr className="table__body__row">
-              <td className="table__body__col">12:30 PM - 1:30 PM</td>
+              <td className="table__body__col">12:30 PM - 01:30 PM</td>
 
               <td className="table__body__col">PY-IT &#40;round 3&#41;</td>
 
@@ -100,7 +100,7 @@ const Schedule = () => {
             </tr>
 
             <tr className="table__body__row">
-              <td className="table__body__col">3:00 PM onwards</td>
+              <td className="table__body__col">03:00 PM onwards</td>
 
               <td className="table__body__col col__long__text">
                 Valedictory, prize and certificate distribution &#40;Department

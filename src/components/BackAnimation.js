@@ -1,33 +1,7 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import styled from "styled-components/macro";
 
-const getWidth = () =>
-  window.innerWidth ||
-  document.documentElement.clientWidth ||
-  document.body.clientWidth;
-
-const getHeigth = () =>
-  window.innerHeight ||
-  document.documentElement.clientHeight ||
-  document.body.clientHeight;
-
 const BackAnimation = () => {
-  const [width, setWidth] = useState(getWidth());
-  const [height, setHeight] = useState(getHeigth());
-
-  useEffect(() => {
-    const resizeListener = () => {
-      setWidth(getWidth());
-      setHeight(getHeigth());
-    };
-
-    window.addEventListener("resize", resizeListener);
-
-    return () => {
-      window.removeEventListener("resize", resizeListener);
-    };
-  }, []);
-
   useEffect(() => {
     const stars = document.getElementById("stars");
     const starsCtx = stars.getContext("2d");
@@ -36,8 +10,8 @@ const BackAnimation = () => {
     let screen,
       starsElements,
       starsParams = {
-        speed: width > 768 ? 6 : 4,
-        number: width > 768 ? 300 : 200,
+        speed: window.innerWidth > 768 ? 6 : 4,
+        number: Window.innerWidth > 768 ? 300 : 200,
         extinction: 4,
       };
 
@@ -83,9 +57,9 @@ const BackAnimation = () => {
 
     function setupStars() {
       screen = {
-        w: width,
-        h: height,
-        c: [width * 0.5, height * 0.5],
+        w: window.innerWidth,
+        h: window.innerHeight,
+        c: [window.innerWidth * 0.5, window.innerHeight * 0.5],
       };
 
       window.cancelAnimationFrame(updateStars);
@@ -108,7 +82,7 @@ const BackAnimation = () => {
 
       window.requestAnimationFrame(updateStars);
     }
-  }, [width, height]);
+  }, []);
   return (
     <BackgroundContainer>
       <canvas id="stars"></canvas>
@@ -126,7 +100,7 @@ const BackgroundContainer = styled.div`
   bottom: 0;
   z-index: -999;
   overflow: hidden;
-  
+
   #stars {
     position: absolute;
     top: 0;

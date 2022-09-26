@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components/macro";
 import EventBlock from "../../components/EventBlock";
+import events from "../../events.json";
 
 const Event = () => {
   const [eventToogle, setEventToogle] = React.useState(0);
@@ -36,10 +37,9 @@ const Event = () => {
       <EventContainer>
         {eventToogle === 0 ? (
           <>
-            <EventBlock />
-            <EventBlock />
-            <EventBlock />
-            <EventBlock />
+            {events.map((event) => (
+              <EventBlock event={event} key={event.id} />
+            ))}
           </>
         ) : (
           <div></div>
@@ -50,7 +50,6 @@ const Event = () => {
 };
 
 const EventSection = styled.div`
-  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -61,10 +60,6 @@ const EventSection = styled.div`
   @media (max-width: 768px) {
     padding: 2rem;
   }
-
-  /* @media (min-width: 1540px) {
-    min-height: 768px;
-  } */
 `;
 
 const EventHeader = styled.div`
@@ -78,7 +73,7 @@ const EventToogle = styled.div`
   background: #212121;
 
   .toggle-btn {
-    padding: 1rem 4rem;
+    padding: 0.6rem 4rem;
     cursor: pointer;
     background: transparent;
     border: 0;

@@ -136,21 +136,21 @@
   margin: 0;
 }
 
-.con_ani_2{
+.con_ani_2 {
   background-size: 0.2em 100%;
   font: 10rem Open Sans, Impact;
   text-transform: uppercase;
   margin: 0;
 }
 
-
 @media (max-width: 768px) {
   .con_ani {
-    font: 8rem Open Sans, Impact;
+    font: 7rem Open Sans, Impact;
   }
 
   .con_ani_2 {
-    font: 7.2rem Open Sans, Impact;
+    top: -5rem;
+    font: 5.4rem Open Sans, Impact;
   }
 
   .text {
@@ -158,27 +158,7 @@
     stroke-width: 4;
   }
 
-  .text2{
-    fill: none;
-    stroke-width: 3;
-  }
-}
-
-@media (max-width: 410px) {
-  .con_ani {
-    font: 6rem Open Sans, Impact;
-  }
-  .con_ani_2 {
-    font: 5rem Open Sans, Impact;
-    /* top:100%; */
-  }
-  
-  .text {
-    fill: none;
-    stroke-width: 3;
-  }
-
-  .text2{
+  .text2 {
     fill: none;
     stroke-width: 3;
   }
@@ -186,6 +166,5 @@
 
 svg {
   position: relative;
-  width: 100%;  
+  width: 100%;
 }
-

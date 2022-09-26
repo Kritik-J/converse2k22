@@ -9,14 +9,14 @@ const Footer = () => {
           <FooterLinks>
             <FooterLinksHeader>Head Of Department</FooterLinksHeader>
 
-            <FooterLink>Mita Parekh</FooterLink>
+            <FooterLink>Dr. Mita Parekh</FooterLink>
           </FooterLinks>
 
           <FooterLinks>
             <FooterLinksHeader>Faculty Coordinators</FooterLinksHeader>
 
-            <FooterLink>Ashish Kharwar</FooterLink>
-            <FooterLink>Apurva Mandalaywala</FooterLink>
+            <FooterLink>Prof. Ashish Kharwar</FooterLink>
+            <FooterLink>Prof. Apurva Mandalaywala</FooterLink>
           </FooterLinks>
 
           <FooterLinks>
@@ -46,12 +46,12 @@ const Footer = () => {
             <FooterLink>Kritik Jiyaviya</FooterLink>
           </FooterLinks>
 
-          <FooterLinks>
+          {/* <FooterLinks>
             <FooterLinksHeader>Decoration Team</FooterLinksHeader>
 
             <FooterLink>Honey Bhanushali</FooterLink>
             <FooterLink>Khushi Jariwala</FooterLink>
-          </FooterLinks>
+          </FooterLinks> */}
         </FooterLinksContainer>
 
         <FooterText>© Converse 2022 - All Rights Reserved</FooterText>
@@ -89,7 +89,7 @@ const FooterWrapper = styled.div`
 const FooterLinksContainer = styled.div`
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 1rem;
   color: #fff;
 

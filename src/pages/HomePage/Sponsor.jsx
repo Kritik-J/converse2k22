@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components/macro";
 import ConverseLogo from "../../assets/Converse2k22.png";
+// import AdroitLogo from "../../assets/sponsors/Adroit.png";
+// import RejoicehubLogo from "../../assets/sponsors/Rejoicehub.png";
 
 const Sponsor = () => {
   return (
@@ -88,6 +90,7 @@ const SponsorContainer = styled.div`
     border-radius: 0.5rem;
     box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.5);
     width: 100%;
+    min-height: 20rem;
 
     .sponsor__logo {
       width: 100%;

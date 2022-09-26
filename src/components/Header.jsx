@@ -33,6 +33,19 @@ const Header = () => {
     }
   };
 
+  // const handleScheduleClick = () => {
+  //   if (pathname !== "/") {
+  //     history("/");
+  //     setTimeout(() => {
+  //       const events = document.getElementById("#schedule");
+  //       events.scrollIntoView({ behavior: "smooth" });
+  //     }, 500);
+  //   } else {
+  //     const events = document.getElementById("#schedule");
+  //     events.scrollIntoView({ behavior: "smooth" });
+  //   }
+  // };
+
   return (
     <HeaderContainer>
       <Navbar>
@@ -43,6 +56,7 @@ const Header = () => {
         <NavbarLinks>
           <NavLink onClick={handleEventsClick}>Events</NavLink>
           <NavLink onClick={handleAboutClick}>About</NavLink>
+          {/* <NavLink onClick={handleScheduleClick}>Schedule</NavLink> */}
         </NavbarLinks>
       </Navbar>
     </HeaderContainer>
