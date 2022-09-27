@@ -76,7 +76,7 @@ const Schedule = () => {
               <td className="table__body__col">02:30 PM onwards </td>
 
               <td className="table__body__col">
-                Talash
+                Talaash
                 <span className="non__tech-color"> &#40;Non-Tech&#41;</span>
               </td>
 
