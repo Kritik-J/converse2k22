@@ -1,0 +1,100 @@
+[
+  {
+    "id": "1",
+    "slug": "spotifiesta",
+    "name": "Spotifiesta",
+    "rules": [
+      {
+        "id": "1",
+        "rule": "Registration Fee : Rs 20 per team"
+      },
+      {
+        "id": "2",
+        "rule": "This event will feature a team of two participants."
+      },
+      {
+        "id": "3",
+        "rule": "In the first round, we'll play several music clips and ask you any questions about them."
+      },
+      {
+        "id": "4",
+        "rule": "Based on the accurate responses provided in round 1, some participants will be chosen for round 2."
+      },
+      {
+        "id": "5",
+        "rule": " In round 2, you will have to complete the lyrics of the song."
+      },
+      {
+        "id": "6",
+        "rule": " In round 2, you will have to complete the lyrics of the song."
+      }
+    ],
+    "poster": " ../assets/posters/Spotiefista.png"
+  },
+  {
+    "id": "2",
+    "slug": "hey-alexa",
+    "name": "Hey, Alexa : Challenge Accepted!",
+    "description": "",
+    "poster": "../assets/posters/Hey Alexa.png",
+    "rules": [
+      {
+        "id": "1",
+        "rule": "Registration Fee : Rs 20 per team"
+      },
+      {
+        "id": "2",
+        "rule": "In Hey, Alexa! Teams of two candidates are formed."
+      },
+      {
+        "id": "3",
+        "rule": "They must ask Alexa questions in a way that causes her to say the word that is written on the chit they have chosen."
+      },
+      {
+        "id": "4",
+        "rule": "Each team will be granted a certain amount of time, and the winning team will be the one that completes the most chits."
+      },
+      {
+        "id": "5",
+        "rule": "The winner of the competition is the participant who completes the most chits."
+      },
+      {
+        "id": "6",
+        "rule": "Top 2 team will be rewarded with cash price"
+      }
+    ]
+},
+{
+    "id": "3",
+    "slug": "talaash",
+    "name": "Talaash : The Answer Lies Within",
+    "rules" : [
+        {
+          "id": "1",
+          "rule": "Registration Fee : Rs 20 per team"
+        },
+        {
+          "id": "2",
+          "rule": "Participants in this event will be shown a presentation of movie plot descriptions.          "
+        },
+        {
+          "id": "3",
+          "rule": "The participants must guess the movie title from the plot description."
+        },
+        {
+          "id": "4",
+          "rule": "The participant with the most correct guesses will be declared the winner."
+        },
+        {
+          "id": "5",
+          "rule": "In the case of a tie, there will be a tie breaker round of three questions, with the participant who provides the first two correct answers being declared the winner."
+        },
+        {
+          "id": "6",
+          "rule": "Top 2 team will be rewarded with cash price"
+        }
+        
+    ],
+    "poster": "../assets/posters/Talaash.png"
+  }
+]

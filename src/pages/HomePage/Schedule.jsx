@@ -26,7 +26,7 @@ const Schedule = () => {
             <tr className="table__body__row">
               {/* Day 1 Start */}
 
-              <td className="table__body__col" rowSpan="4">
+              <td className="table__body__col" rowSpan="6">
                 30<sup>th</sup> September 2022
               </td>
 
@@ -34,7 +34,7 @@ const Schedule = () => {
 
               <td className="table__body__col">PY-IT &#40;round 1&#41;</td>
 
-              <td className="table__body__col">-</td>
+              <td className="table__body__col">IT Lab 1,2,3</td>
             </tr>
 
             <tr className="table__body__row">
@@ -42,7 +42,18 @@ const Schedule = () => {
 
               <td className="table__body__col">Logo Hunt</td>
 
-              <td className="table__body__col">-</td>
+              <td className="table__body__col">IT Lab 1,2,3</td>
+            </tr>
+
+            <tr className="table__body__row">
+              <td className="table__body__col">11:30 AM - 12:45 PM</td>
+
+              <td className="table__body__col">
+                Spotifiesta &#40;round 1&#41;
+                <span className="non__tech-color"> &#40;Non-Tech&#41;</span>
+              </td>
+
+              <td className="table__body__col">IT Dept. 2nd Floor</td>
             </tr>
 
             <tr className="table__body__row">
@@ -50,7 +61,7 @@ const Schedule = () => {
 
               <td className="table__body__col">Codathon</td>
 
-              <td className="table__body__col">-</td>
+              <td className="table__body__col">IT Lab 1,2,3</td>
             </tr>
 
             <tr className="table__body__row">
@@ -58,7 +69,18 @@ const Schedule = () => {
 
               <td className="table__body__col">PY-IT &#40;round 2&#41;</td>
 
-              <td className="table__body__col">-</td>
+              <td className="table__body__col">IT Lab 1</td>
+            </tr>
+
+            <tr className="table__body__row">
+              <td className="table__body__col">02:30 PM onwards </td>
+
+              <td className="table__body__col">
+                Talash
+                <span className="non__tech-color"> &#40;Non-Tech&#41;</span>
+              </td>
+
+              <td className="table__body__col">IT Dept. 2nd Floor</td>
             </tr>
 
             {/* Day 1 End */}
@@ -72,7 +94,7 @@ const Schedule = () => {
             {/* Day 2 Start */}
 
             <tr className="table__body__row">
-              <td className="table__body__col" rowSpan="4">
+              <td className="table__body__col" rowSpan="6">
                 1<sup>st</sup> October 2022
               </td>
 
@@ -80,7 +102,7 @@ const Schedule = () => {
 
               <td className="table__body__col">Bug Buzz</td>
 
-              <td className="table__body__col">-</td>
+              <td className="table__body__col">IT Lab 1,2,3</td>
             </tr>
 
             <tr className="table__body__row">
@@ -88,7 +110,18 @@ const Schedule = () => {
 
               <td className="table__body__col">IT Quiz</td>
 
-              <td className="table__body__col">-</td>
+              <td className="table__body__col">IT Lab 1,2,3</td>
+            </tr>
+
+            <tr className="table__body__row">
+              <td className="table__body__col">11:30 AM - 01:00 PM</td>
+
+              <td className="table__body__col">
+                Hey alexa
+                <span className="non__tech-color"> &#40;Non-Tech&#41;</span>
+              </td>
+
+              <td className="table__body__col">IT Dept. 2nd Floor</td>
             </tr>
 
             <tr className="table__body__row">
@@ -96,7 +129,18 @@ const Schedule = () => {
 
               <td className="table__body__col">PY-IT &#40;round 3&#41;</td>
 
-              <td className="table__body__col">-</td>
+              <td className="table__body__col">IT Lab 1</td>
+            </tr>
+
+            <tr className="table__body__row">
+              <td className="table__body__col">01:00 PM - 02:00 PM</td>
+
+              <td className="table__body__col">
+                Spotifiesta &#40;round 2&#41;
+                <span className="non__tech-color"> &#40;Non-Tech&#41;</span>
+              </td>
+
+              <td className="table__body__col">IT Dept. 2nd Floor</td>
             </tr>
 
             <tr className="table__body__row">
@@ -107,7 +151,7 @@ const Schedule = () => {
                 level&#41;
               </td>
 
-              <td className="table__body__col">-</td>
+              <td className="table__body__col">NJ Seminar Hall</td>
             </tr>
           </tbody>
 
@@ -165,6 +209,10 @@ const ScheduleTable = styled.table`
   width: 100%;
   border: 1px solid #3d3d3d;
   border-collapse: collapse;
+
+  .non__tech-color {
+    color: #f26ec6;
+  }
 
   .table__header__row {
     .table__heading {

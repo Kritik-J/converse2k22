@@ -11,28 +11,28 @@ const About = () => {
         <h1 className="about__title">About Us</h1>
 
         <p className="about__paragraph">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-          voluptates, quod, quia, voluptate quae voluptatem quibusdam
-          necessitatibus quidem voluptatum quos quas. Quisquam, quae. Quisquam
-          voluptates, quod, quia, voluptate quae voluptatem quibusdam
-          necessitatibus quidem voluptatum quos quas. Quisquam, quae.
+          Converse2k22 is a technical fest organised by the Department of
+          Information Technology at Sarvajanik College of Engineering and
+          Technology in Surat under the banner of Kshitij 2022.
         </p>
 
         <p className="about__paragraph">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-          voluptates, quod, quia, voluptate quae voluptatem quibusdam
-          necessitatibus quidem voluptatum quos quas. Quisquam, quae. Quisquam
-          voluptates, quod, quia, voluptate quae voluptatem quibusdam
-          necessitatibus quidem voluptatum quos quas. Quisquam, quae.
+          It will take place on September 30th and 1st October 2022, between 9
+          AM and 4 PM. There are two faculty conveners, six student
+          coordinators, and nine event faculty heads on the team.
         </p>
 
         <p className="about__paragraph">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-          voluptates, quod, quia, voluptate quae voluptatem quibusdam
-          necessitatibus quidem voluptatum quos quas. Quisquam, quae. Quisquam
-          voluptates, quod, quia, voluptate quae voluptatem quibusdam
-          necessitatibus quidem voluptatum quos quas. Quisquam, quae.
+          It includes five technical and three non-technical events. This event
+          assists students in discovering their areas of interest and in
+          developing their overall personality, management, and communication
+          skills.
         </p>
+
+        <h3 className="about__hod">
+          <span className="about__hod-title">H.O.D </span>
+          Dr. Mita Parekh
+        </h3>
       </AboutText>
     </AboutSection>
   );
@@ -83,9 +83,15 @@ const AboutText = styled.div`
   }
 
   .about__paragraph {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     margin-top: 1.5rem;
     line-height: 1.8;
+  }
+
+  .about__hod {
+    margin-top: 1.5rem;
+    font-weight: 700;
+    color: var(--tertiary);
   }
 
   @media (max-width: 768px) {

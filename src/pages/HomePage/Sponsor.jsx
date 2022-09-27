@@ -123,9 +123,6 @@ const Sponsor = () => {
               <div className="sponsor__coupon__description">
                 <p className="sponsor__coupon">Coupon Information - </p>
                 <p className="sponsor__coupon">
-                  Buy any 11” pizza and get any one 8” pizza
-                </p>
-                <p className="sponsor__coupon">
                   Buy any 11” pizza and get any one 8” pizza free from value or
                   traditional range pizzas only
                 </p>

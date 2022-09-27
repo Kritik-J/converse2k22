@@ -46,12 +46,12 @@ const Footer = () => {
             <FooterLink>Kritik Jiyaviya</FooterLink>
           </FooterLinks>
 
-          {/* <FooterLinks>
+          <FooterLinks>
             <FooterLinksHeader>Decoration Team</FooterLinksHeader>
 
-            <FooterLink>Honey Bhanushali</FooterLink>
-            <FooterLink>Khushi Jariwala</FooterLink>
-          </FooterLinks> */}
+            <FooterLink>Prof. Mittal Patel</FooterLink>
+            <FooterLink>Siya Anghan</FooterLink>
+          </FooterLinks>
         </FooterLinksContainer>
 
         <FooterText>© Converse 2022 - All Rights Reserved</FooterText>
@@ -89,7 +89,7 @@ const FooterWrapper = styled.div`
 const FooterLinksContainer = styled.div`
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1rem;
   color: #fff;
 

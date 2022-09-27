@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components/macro";
 import LoadEventBlock from "../../components/LoadEventBlock";
-import events from "../../events.json";
+import techEvents from "../../tech-events.json";
+import nonTechEvents from "../../nontech-events.json";
 
 const EventBlock = React.lazy(() => import("../../components/EventBlock"));
 
@@ -39,14 +40,26 @@ const Event = () => {
       <EventContainer>
         {eventToogle === 0 ? (
           <>
-            {events.map((event) => (
+            {techEvents.map((event) => (
               <React.Suspense fallback={<LoadEventBlock />} key={event.id}>
-                <EventBlock event={event} />
+                <EventBlock event={event} nonTeach={false} />
               </React.Suspense>
             ))}
           </>
         ) : (
-          <div></div>
+          <>
+            <h2 className="notech__note">
+              <span>Note - </span>
+              Registration for non technical events will be done from IT
+              registration desk near mechanical workshop.
+            </h2>
+
+            {nonTechEvents.map((event) => (
+              <React.Suspense fallback={<LoadEventBlock />} key={event.id}>
+                <EventBlock event={event} nonTeach={true} />
+              </React.Suspense>
+            ))}
+          </>
         )}
       </EventContainer>
     </EventSection>
@@ -75,6 +88,9 @@ const EventToogle = styled.div`
   position: relative;
   border-radius: 4rem;
   background: #212121;
+  display: flex;
+  align-items: center;
+  display: -webkit-flex;
 
   .toggle-btn {
     padding: 0.6rem 4rem;
@@ -119,6 +135,16 @@ const EventToogle = styled.div`
 
 const EventContainer = styled.div`
   width: 100%;
+
+  .notech__note {
+    font-size: 1.8rem;
+    font-style: italic;
+    margin-bottom: 3rem;
+
+    span {
+      color: var(--tertiary);
+    }
+  }
 `;
 
 export default Event;

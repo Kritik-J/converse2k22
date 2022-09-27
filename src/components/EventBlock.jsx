@@ -3,7 +3,7 @@ import React from "react";
 import styled from "styled-components/macro";
 import Bg from "../assets/bg.webp";
 
-const EventBlock = ({ event }) => {
+const EventBlock = ({ event, nonTeach }) => {
   return (
     <EventBlockWrapper>
       <EventPoster
@@ -15,11 +15,24 @@ const EventBlock = ({ event }) => {
 
       <EventInfo>
         <h1 className="event-title">{event.name}</h1>
-        <p className="event-description">{event.description}</p>
+        {nonTeach ? (
+          <div className="event-rules">
+            {event.rules &&
+              event.rules.map((rule) => (
+                <p className="event-rule" key={rule.id}>
+                  {rule.rule}
+                </p>
+              ))}
+          </div>
+        ) : (
+          <p className="event-description">{event.description}</p>
+        )}
 
-        <a href={event.link} className="view-event">
-          View More
-        </a>
+        {!nonTeach && (
+          <a href={event.link} className="view-event">
+            View More
+          </a>
+        )}
       </EventInfo>
     </EventBlockWrapper>
   );
@@ -117,6 +130,13 @@ const EventInfo = styled.div`
     line-height: 1.8;
   }
 
+  .event-rules {
+    font-size: 1.6rem;
+    .event-rule {
+      margin-top: 0.5rem;
+    }
+  }
+
   .view-event {
     background: var(--tertiary);
     color: #fff;
@@ -142,6 +162,7 @@ const EventInfo = styled.div`
 
   @media (max-width: 768px) {
     width: 100%;
+
     .event-title {
       font-size: 1.8rem;
       margin-bottom: 1rem;
