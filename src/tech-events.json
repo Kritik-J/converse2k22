@@ -383,6 +383,16 @@
     "name": "IT Quiz",
     "description": "With this quiz , we are giving all the participants an opportunity to test their IT skills and programming logic. The participant who answers all the questions correctly and the earliest , will recieve a cash price and a winning certificate.\nAll the participants will get a participation certificate.",
     "poster": "../assets/posters/IT Quiz.png",
+    "rules": [
+      {
+        "id": "1",
+        "rule": "Time limit : 30mins"
+      },
+      {
+        "id": "2",
+        "rule": "No. Of questions: 25"
+      }
+    ],
 
     "facultyCoordinator": [
       {
