@@ -1,5 +1,5 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import styled from "styled-components/macro";
 import Bg from "../assets/bg.jpg";
 
@@ -25,13 +25,17 @@ const EventBlock = ({ event, nonTeach }) => {
               ))}
           </div>
         ) : (
-          <p className="event-description">{event.description}</p>
+          <p className="event-description">
+            {event.description.length > 400
+              ? event.description.slice(0, 400) + "..."
+              : event.description}
+          </p>
         )}
 
         {!nonTeach && (
-          <a href={event.link} className="view-event">
+          <Link to={`/events/${event.slug}`} className="view-event">
             View More
-          </a>
+          </Link>
         )}
       </EventInfo>
     </EventBlockWrapper>

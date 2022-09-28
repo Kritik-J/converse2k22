@@ -1,42 +1,445 @@
 [
-    {
+  {
+    "id": "1",
+    "slug": "py-it",
+    "name": "PY-IT",
+    "description": "What the event is?\nPY-IT (Practice Your Interview Techniques) is a virtual job hiring event which will not only give you an experience for your real time job recruitment process but also give you a life changing experience. This event will test your aptitude skills, interpersonal skills and soft skills.\nWhat to do in the event?\nThis event will have three stages : Aptitude round which will have questions based on General Aptitude, Verbal and logical reasoning, Current affairs and General Knowledge etc . After the completion of this round , 24 students will be shortlisted for the second stage which is the Group discussion. A set of 10 topics will be shared to shortlisted candidates. In Group Discussion candidates will be evaluated based on their subject knowledge, communication skills, group behaviour, leadership skill etc. After the completion of GD , 8-10 students will be selected for the final Personal Interview round where your self confidence, soft skills, resume writing etc will be judged.",
+    "poster": " ../assets/posters/PyIT.png",
+
+    "rounds": [
+      {
         "id": "1",
-        "slug": "py-it",
-        "name": "PY-IT",
-        "description": "PY-IT (Practice Your Interview Techniques) is a virtual job hiring event which will not only give you an experience for your real time job recruitment process but also give you a life changing experience. This event will test your aptitude skills, interpersonal skills and soft skills.",
-        "poster": " ../assets/posters/PyIT.png",
-        "link": "http://converse2k22.triple5.online:3000/pyit"
-    },
-    {
+        "name": "Aptitude Round",
+        "description": "Aptitude Round mostly is a multiple choice type quiz which will consist of questions which have to be completed in a time slot of 30 minutes. The login details would be mailed to all the PYIT participants after the registration ends. The ones who successfully clear the aptitude round would only be given entry in the Group discussion round. Assuming the number of participants to be 150, 24 would be selected from the aptitude round."
+      },
+      {
         "id": "2",
-        "slug": "logo-hunt",
-        "name": "Logo Hunt",
-        "description": "LOGO-HUNT is an Event in which you have to Identify the Logos and Done it in shortest amount of time. Basically it is a Quick guessing Event which Tests your General and Professional Knowledge.",
-        "poster": "../assets/posters/Logo Hunt.png",
-        "link": "http://converse2k22.triple5.online:3000/logoHunt"
-    },
-    {
+        "name": "Group Discussion",
+        "description": "Topics of Group discussion will be provided as soon as shortlisted candidates are announced. All the shortlisted candidates must reach before 10 minutes of the starting time. All the participants will be divided into two groups each group consisting of 12 members and each group will have a time slot of approximately 20 min. There would be an allocation of 10 topics and from that any one will be selected. It’s requested to have some insight on each topic."
+      },
+      {
         "id": "3",
-        "slug": "codathon",
-        "name": "Codathon",
-        "description": "CODATHON is a competitive coding event. Inspired from various well known coding events, CODATHON is made for experiencing the feelings you go through in any coding event or coding rounds during the recruitment process. Thrill your mind and have an adventure in the stream of problems!",
-        "poster": "../assets/posters/Codathon.png",
-        "link": "http://converse2k22.triple5.online:3000/codathon"
-    },
-    {
+        "name": "Final Interview",
+        "description": "Out of the 24 in group discussion, 8-10 would be shortlisted for the final interview. Students will be shortlisted on the basis of cumulative score of Aptitude test and Group discussion. Shortlisted candidates will have to mail their resumes on an email address provided on the day of their group discussion at least two hours before the start of the event as well they should also have their respective hardcopy of a resume. Participants are supposed to be present before 10 minutes of the actual time. The results would be announced shortly after the interview gets over."
+      }
+    ],
+
+    "facultyCoordinator": [
+      {
+        "id": "1",
+        "name": "Dr. Vivaksha Jariwala",
+        "number": "98983 82008"
+      },
+      {
+        "id": "2",
+        "name": "Prof. Mukesh Patel",
+        "number": "94269 75922"
+      }
+    ],
+
+    "eventHeads": [
+      {
+        "id": "1",
+        "name": "Riddhi Dhanani (4th IT)",
+        "number": "98251 38029"
+      },
+      {
+        "id": "2",
+        "name": "Jinal Bavadiya (3rd IT)",
+        "number": "87589 31880"
+      }
+    ],
+
+    "eventVolunteers": [
+      {
+        "id": "1",
+        "name": "Meet Jadhav",
+        "number": "74868 92721"
+      },
+      {
+        "id": "2",
+        "name": "Kartavya Master",
+        "number": "70697 79868"
+      },
+      {
+        "id": "3",
+        "name": "Parth Jariwala",
+        "number": "6352 205 204"
+      },
+      {
         "id": "4",
-        "slug": "bug-buzz",
-        "name": "Bug Buzz",
-        "description": "Bug Buzz is a coding/programing related event which would help you as a programmer to strengthen the programming skills within you. This event is unlike any other coding/programming event. In this event participant has to debug the given program rather than writing it, as debugging a code is more complex than making a code from scratch.",
-        "poster": "../assets/posters/Bug Buzz.png",   
-        "link": "http://converse2k22.triple5.online:3000/bigbuzz"
-    },
-    {
+        "name": "Shruti Kanani",
+        "number": "99783 64430"
+      },
+      {
+        "id": "6",
+        "name": "Vidhi Jariwala",
+        "number": "90542 20301"
+      },
+      {
+        "id": "7",
+        "name": "Bhavya Lineswala",
+        "number": "94267 18112"
+      }
+    ],
+
+    "date": "30/09/2022",
+    "time": "09:15 AM - 10:15 AM",
+    "venue": "IT Lab - 1, 2, 3"
+  },
+
+  {
+    "id": "2",
+    "slug": "logo-hunt",
+    "name": "Logo Hunt",
+    "description": "What the Event is:\nLOGO-HUNT is an Event in which you have to Identify the Logos and Done it in shortest amount of time. Basically it is a Quick guessing Event which Tests your General and Professional Knowledge.\nWhat to do in the Event:\nThe Event only having a Single Stage in which you have to just see the Logos available on Big Screen and based on your assumptions and write it down on given Form.",
+    "poster": "../assets/posters/Logo Hunt.png",
+
+    "rules": [
+      {
+        "id": "1",
+        "rule": "First 100 entries are allowed."
+      },
+      {
+        "id": "2",
+        "rule": "No spelling mistakes are allowed."
+      },
+      {
+        "id": "3",
+        "rule": "Time based event(Less time + Maximum number of answers should be correct)."
+      },
+      {
+        "id": "4",
+        "rule": "Mobiles are not allowed."
+      },
+      {
         "id": "5",
-        "slug": "it-quiz",
-        "name": "IT Quiz",
-        "description": "With this quiz , we are giving all the participants an opportunity to test their IT skills and programming logic. \nThe participant who answers all the questions correctly and the earliest , will recieve a cash price and a winning certificate .\nAll the participants will get a participation certificate.",
-        "poster": "../assets/posters/IT Quiz.png",
-        "link": "http://converse2k22.triple5.online:3000/itQuiz"
-    }
+        "rule": "Only single round is there."
+      },
+      {
+        "id": "6",
+        "rule": "Students have to fill the answers in form."
+      }
+    ],
+
+    "facultyCoordinator": [
+      {
+        "id": "1",
+        "name": "Prof. Bhumika Patel"
+      },
+      {
+        "id": "2",
+        "name": "Prof. Mittal Patel"
+      }
+    ],
+
+    "eventHeads": [
+      {
+        "id": "1",
+        "name": "Jigar Purohit(IT-3 rd Year)",
+        "number": "99098 22348"
+      },
+      {
+        "id": "2",
+        "name": "Viddhi Ladva(IT-3 rd Year)",
+        "number": "78020 99520"
+      }
+    ],
+
+    "eventVolunteers": [
+      {
+        "id": "1",
+        "name": "Aneri Naik (IT-3 rd Year)",
+        "number": "98241 77712"
+      },
+      {
+        "id": "2",
+        "name": "Prisitha Patel (IT-3 rd Year)",
+        "number": "93138 44701"
+      },
+      {
+        "id": "3",
+        "name": "Parthiv Kevadiya (IT-3 rd Year)",
+        "number": "98252 97582"
+      },
+      {
+        "id": "4",
+        "name": "Parthiv Bhayani (IT-3 rd Year)",
+        "number": "98254 21366"
+      },
+      {
+        "id": "6",
+        "name": "Shreya Chopra (IT-2 nd Year) ",
+        "number": "75883 31046"
+      },
+      {
+        "id": "7",
+        "name": "Suhani Mehta (IT-2 nd Year)",
+        "number": "94281 44682"
+      },
+      {
+        "id": "8",
+        "name": "Vatsal Sanghani (IT-1 st Year)",
+        "number": "84695 36095"
+      },
+      {
+        "id": "9",
+        "name": "Gati Ambaliya (AIDS 2 nd Year)",
+        "number": "63549 75099"
+      }
+    ],
+
+    "date": "30/09/2022",
+    "time": "09:15 AM - 10:15 AM",
+    "venue": "IT Lab - 1, 2, 3"
+  },
+
+  {
+    "id": "3",
+    "slug": "codathon",
+    "name": "Codathon",
+    "description": "CODATHON is a competitive coding event. Inspired from various well known coding events, CODATHON is made for experiencing the feelings you go through in any coding event or coding rounds during recruitment process. Thrill your mind and have an adventure in the stream of problems!",
+    "poster": "../assets/posters/Codathon.png",
+
+    "rules": [
+      {
+        "id": "1",
+        "rule": "Individual participation."
+      },
+      {
+        "id": "2",
+        "rule": "Time duration 45 mins."
+      },
+      {
+        "id": "3",
+        "rule": "2 coding questions."
+      },
+      {
+        "id": "4",
+        "rule": "Coding languages allowed: C, C++ and JAVA."
+      },
+      {
+        "id": "5",
+        "rule": "No use of Internet."
+      },
+      {
+        "id": "6",
+        "rule": "Evaluation will be based on time taken, test cases passed and optimal solution."
+      },
+      {
+        "id": "7",
+        "rule": "Top three will be awarded with prizes during valedictory event."
+      }
+    ],
+
+    "facultyCoordinator": [
+      {
+        "id": "1",
+        "name": "Dr. Dhruti Sharma"
+      },
+      {
+        "id": "2",
+        "name": "Prof. Dhyani Joshi"
+      }
+    ],
+
+    "eventHeads": [
+      {
+        "id": "1",
+        "name": "Manish Prajapati (4th Year)",
+        "number": "75750 64449"
+      },
+      {
+        "id": "2",
+        "name": "Shiv Kadiwala (3rd Year)",
+        "number": "88497 23042"
+      }
+    ],
+
+    "eventVolunteers": [
+      {
+        "id": "1",
+        "name": "Aarchi Chayani"
+      },
+      {
+        "id": "2",
+        "name": "Dev Butani"
+      },
+      {
+        "id": "3",
+        "name": "Harsh Bardolia"
+      },
+      {
+        "id": "4",
+        "name": "Jensi Ghadiya"
+      },
+      {
+        "id": "6",
+        "name": "Janvi Panchal"
+      },
+      {
+        "id": "7",
+        "name": "Krupansh Nakrani"
+      }
+    ],
+
+    "date": "30/09/2022",
+    "time": "09:15 AM - 10:15 AM",
+    "venue": "IT Lab - 1, 2, 3"
+  },
+
+  {
+    "id": "4",
+    "slug": "bug-buzz",
+    "name": "Bug Buzz",
+    "description": "Bug Buzz is a coding/programing related event which would help you as a programmer to strengthen the programming skills within you. This event is unlike any other coding/programming event. In this event participant has to debug the given program rather than writing it, as debugging a code is more complex than making a code from scratch.",
+    "poster": "../assets/posters/Bug Buzz.png",
+
+    "rounds": [
+      {
+        "id": "1",
+        "description": "House of the Debuggers: Participants would be provided a code(containing bugs) and a desired output. Candidates have to identify and rectify the bugs within 15 minutes and have to show it. Code would be provided in C language. 30 participants who have rectified the code correctly within a short time would be selected for round 2."
+      },
+      {
+        "id": "2",
+        "description": " Debugger-Saga: Procedure would be same as the previous round but the code would be comparatively complex to debug. Winners would be selected on the basis of time they take to debug and rectify the code."
+      }
+    ],
+
+    "facultyCoordinator": [
+      {
+        "id": "1",
+        "name": "Prof. Hiren Vavaiya"
+      },
+      {
+        "id": "2",
+        "name": "Prof. Karuna Patel"
+      }
+    ],
+
+    "eventHeads": [
+      {
+        "id": "1",
+        "name": "Jenish Jai (4 th IT)",
+        "number": "79906 25858"
+      },
+      {
+        "id": "2",
+        "name": "Jahnvi Seth (3 rd IT)",
+        "number": "77780 50971"
+      }
+    ],
+
+    "eventVolunteers": [
+      {
+        "id": "1",
+        "name": "Manan Kansara (4 th IT)",
+        "number": "63590 17706"
+      },
+      {
+        "id": "2",
+        "name": "Shruti Jasoliya (3 rd IT)",
+        "number": "87589 31880"
+      },
+      {
+        "id": "3",
+        "name": "Jaimin Malaviya (3 rd IT)",
+        "number": "90810 20358"
+      },
+      {
+        "id": "4",
+        "name": "Kena Sutariya (2 nd IT)",
+        "number": "94090 47787"
+      },
+      {
+        "id": "6",
+        "name": "Ayush Vanani (1 st IT)",
+        "number": "70483 85245"
+      },
+      {
+        "id": "7",
+        "name": "Mitarsh Savaliya (2 nd IT)",
+        "number": "75674 58688"
+      },
+      {
+        "id": "8",
+        "name": "Vishwa Moradiya (2 nd IT)",
+        "number": "99258 18146"
+      },
+      {
+        "id": "9",
+        "name": "Hitakshi Dholakiya (1 st IT)",
+        "number": "98247 46058"
+      }
+    ],
+
+    "date": "30/09/2022",
+    "time": "09:15 AM - 10:15 AM",
+    "venue": "IT Lab - 1, 2, 3"
+  },
+  {
+    "id": "5",
+    "slug": "it-quiz",
+    "name": "IT Quiz",
+    "description": "With this quiz , we are giving all the participants an opportunity to test their IT skills and programming logic. The participant who answers all the questions correctly and the earliest , will recieve a cash price and a winning certificate.\nAll the participants will get a participation certificate.",
+    "poster": "../assets/posters/IT Quiz.png",
+
+    "facultyCoordinator": [
+      {
+        "id": "1",
+        "name": "Dr. Tushar Gohil"
+      }
+    ],
+
+    "eventHeads": [
+      {
+        "id": "1",
+        "name": "Purva Gandhi",
+
+        "number": "97122 83143"
+      },
+      {
+        "id": "2",
+        "name": "Vaishnavi Patel",
+        "number": "63516 11780"
+      }
+    ],
+
+    "eventVolunteers": [
+      {
+        "id": "1",
+        "name": "Daraksha",
+        "number": "99986 64552"
+      },
+      {
+        "id": "2",
+        "name": "Aayushi Naik",
+        "number": "99985 99094"
+      },
+      {
+        "id": "3",
+        "name": "Prachi Chheta",
+        "number": "77780 72642"
+      },
+      {
+        "id": "4",
+        "name": "Jenish Sonani",
+        "number": "77779 49735"
+      },
+      {
+        "id": "6",
+        "name": "Naman Sanklecha",
+        "number": "94299 27725"
+      },
+      {
+        "id": "7",
+        "name": "Manav Desai",
+        "number": "83209 36239"
+      }
+    ],
+
+    "date": "30/09/2022",
+    "time": "09:15 AM - 10:15 AM",
+    "venue": "IT Lab - 1, 2, 3"
+  }
 ]
