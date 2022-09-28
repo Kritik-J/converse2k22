@@ -160,7 +160,7 @@ const EventPoster = styled.div`
 
 const EventInfo = styled.div`
   .event-title {
-    font-size: 3.6rem;
+    font-size: 4.8rem;
     font-weight: 700;
     margin-bottom: 2rem;
     color: var(--tertiary);
@@ -186,17 +186,9 @@ const EventInfo = styled.div`
     }
   }
 
-  .event-date,
-  .event-time,
-  .event-venue {
-    font-size: 1.6rem;
-    font-weight: 700;
-    margin: 1rem 0 1rem;
-  }
-
   @media (max-width: 768px) {
     .event-title {
-      font-size: 2.4rem;
+      font-size: 3.2rem;
     }
 
     .event-description {
