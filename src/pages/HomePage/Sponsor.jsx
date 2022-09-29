@@ -107,10 +107,6 @@ const Sponsor = () => {
               <div className="sponsor__address__list">
                 <p className="sponsor__address">Address -</p>
                 <p className="sponsor__address">
-                  A1, S.M.C. Night Bazaar, B/H. Lakeview Garden, PIPLOD, Surat.
-                </p>
-
-                <p className="sponsor__address">
                   G22/23, High Field, Opp. Palm Avenue, VIP Road, VESU, Surat.
                 </p>
 

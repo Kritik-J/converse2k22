@@ -13,7 +13,7 @@ const EventPage = () => {
       <EventPoster>
         <img src={event.poster} alt="" />
 
-        <Register>Register</Register>
+        <Register>Register for {event.name}</Register>
       </EventPoster>
 
       <EventInfo>
@@ -35,7 +35,8 @@ const EventPage = () => {
             {event.rounds.map((round) => (
               <div className="event-round" key={round.id}>
                 <h3 className="event-round-title">
-                  Round {round.id} {round?.name}
+                  Round {round.id}
+                  {round.name ? `) ${round.name}` : ""}
                 </h3>
                 <p className="event-round-description">{round.description}</p>
               </div>
@@ -98,7 +99,6 @@ const EventPage = () => {
 };
 
 const Register = styled.button`
-  background-color: var(--tertiary);
   color: #fff;
   font-size: 1.6rem;
   font-weight: 600;
@@ -106,9 +106,15 @@ const Register = styled.button`
   width: 100%;
   border: none;
   border-radius: 0.5rem;
+  background-color: var(--tertiary);
 
   &:hover {
     cursor: pointer;
+    background-color: #f26ec6;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 1.4rem;
   }
 `;
 
@@ -138,7 +144,6 @@ const EventScreen = styled.div`
 `;
 
 const EventPoster = styled.div`
-  border-radius: 0.5rem;
   width: 100%;
   height: max-content;
   position: sticky;
@@ -151,6 +156,7 @@ const EventPoster = styled.div`
     object-fit: cover;
     display: block;
     margin-bottom: 2rem;
+    border-radius: 0.5rem;
   }
 
   @media (max-width: 768px) {
